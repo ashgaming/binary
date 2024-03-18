@@ -1,0 +1,21 @@
+.textglow{
+    color: aqua;
+    text-shadow: 0 0 1px aqua, 0 0 2ch aqua, 0 0 3px aqua, 0 0 4px aqua, 0 0 5px aqua, 0 0 6px aqua, 0 0 7px aqua;
+    padding: calc(1vw + 2px); /* Margin increases with viewport width */
+    padding: calc(1vw + 2px);
+    position: relative;
+  /*  animation: moveUpDown 20s ease infinite alternate;*/
+
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0); /* Start from initial position */
+    }
+    50% {
+        transform: translateY(-200px); /* Move the element up by 20px */
+    }
+    100% {
+        transform: translateY(0); /* Return to initial position */
+    }
+}
